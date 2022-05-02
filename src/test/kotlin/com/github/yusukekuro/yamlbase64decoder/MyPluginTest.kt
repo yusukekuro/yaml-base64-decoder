@@ -28,4 +28,7 @@ class MyPluginTest : BasePlatformTestCase() {
     fun testRename() {
         myFixture.testRename("foo.xml", "foo_after.xml", "a2")
     }
+
+//    TODO PsiTestUtil.checkFileStructure()
+//    https://plugins.jetbrains.com/docs/intellij/modifying-psi.html#maintaining-tree-structure-consistency
 }

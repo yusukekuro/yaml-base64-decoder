@@ -5,6 +5,7 @@
     <vendor>yusukekuro</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.yaml</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.yusukekuro.yamlbase64decoder.services.MyApplicationService"/>
@@ -15,4 +16,14 @@
         <listener class="com.github.yusukekuro.yamlbase64decoder.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.yusukekuro.yamlbase64decoder.YamlBase64Decoder"
+                class="com.github.yusukekuro.yamlbase64decoder.YamlBase64Decoder"
+                text="Decode Base64 Values"
+                description="Decode base64 encoded values in a yaml file."
+                icon="AllIcons.FileTypes.Yaml">
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt Y"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
