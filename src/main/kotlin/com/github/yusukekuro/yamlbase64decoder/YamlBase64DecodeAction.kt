@@ -1,12 +1,11 @@
 package com.github.yusukekuro.yamlbase64decoder
 
-import com.github.yusukekuro.yamlbase64decoder.visitors.YamlBase64DecodeRecursiveVisitor
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import org.jetbrains.yaml.psi.YAMLFile
 
-class YamlBase64Decoder : AnAction() {
+class YamlBase64DecodeAction : AnAction() {
     /**
      * Replace base64 encoded values with decoded string in following steps
      * <ol>

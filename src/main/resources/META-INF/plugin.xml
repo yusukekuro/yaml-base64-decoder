@@ -8,8 +8,8 @@
     <depends>org.jetbrains.plugins.yaml</depends>
 
     <actions>
-        <action id="com.github.yusukekuro.yamlbase64decoder.YamlBase64Decoder"
-                class="com.github.yusukekuro.yamlbase64decoder.YamlBase64Decoder"
+        <action id="com.github.yusukekuro.yamlbase64decoder.YamlBase64DecodeAction"
+                class="com.github.yusukekuro.yamlbase64decoder.YamlBase64DecodeAction"
                 text="Decode Base64 Values"
                 description="Decode base64 encoded values in a yaml file."
                 icon="AllIcons.FileTypes.Yaml">

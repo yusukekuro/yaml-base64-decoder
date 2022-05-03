@@ -1,4 +1,4 @@
-package com.github.yusukekuro.yamlbase64decoder.visitors
+package com.github.yusukekuro.yamlbase64decoder
 
 import com.intellij.openapi.command.WriteCommandAction
 import org.jetbrains.yaml.psi.YAMLQuotedText
