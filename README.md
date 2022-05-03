@@ -15,8 +15,16 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-- Adds `Decode Base64 Values` to editor popup menu when yaml file is opened.
-- It automatically detects Base64 encoded values in a yaml file and replace them with decoded values.
+Extension
+- Adds `Decode Base64 Values` to editor popup menu when yaml file is opened
+- Adds a keyboard shortcut `Cmd-Alt-Y` to run the decoder
+
+Feature
+- Automatically detects Base64 encoded values in a yaml file and replace them with decoded values
+
+Usecase
+- To see raw text in Kubernetes (k8s) Secret yaml file
+- To see raw text in any yaml file that has Base64 encoded values
 <!-- Plugin description end -->
 
 ## Installation
