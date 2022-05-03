@@ -1,6 +1,6 @@
 package com.github.yusukekuro.yamlbase64decoder
 
-import com.github.yusukekuro.yamlbase64decoder.visitors.CustomYamlRecursiveVisitor
+import com.github.yusukekuro.yamlbase64decoder.visitors.YamlBase64DecodeRecursiveVisitor
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
@@ -25,7 +25,7 @@ class YamlBase64Decoder : AnAction() {
      */
     override fun actionPerformed(e: AnActionEvent) {
         val yamlPsiFile = e.getData(CommonDataKeys.PSI_FILE) as YAMLFile
-        yamlPsiFile.accept(CustomYamlRecursiveVisitor())
+        yamlPsiFile.accept(YamlBase64DecodeRecursiveVisitor())
     }
 
     /**

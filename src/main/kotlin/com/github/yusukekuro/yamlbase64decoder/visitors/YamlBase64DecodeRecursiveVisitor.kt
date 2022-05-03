@@ -15,7 +15,7 @@ import java.util.Base64
 private const val WRITE_COMMAND_NAME = "Decode Base64 Values"
 private const val WRITE_COMMAND_GROUP_ID = "DECODE_BASE64_VALUES_GROUP_ID"
 
-class CustomYamlRecursiveVisitor : YamlRecursivePsiElementVisitor() {
+class YamlBase64DecodeRecursiveVisitor : YamlRecursivePsiElementVisitor() {
 
     override fun visitValue(value: YAMLValue) {
         if (!value.text.isNullOrBlank() && isDecodeTarget(value)) {
