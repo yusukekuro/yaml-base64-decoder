@@ -7,15 +7,6 @@
     <depends>com.intellij.modules.platform</depends>
     <depends>org.jetbrains.plugins.yaml</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.yusukekuro.yamlbase64decoder.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.yusukekuro.yamlbase64decoder.services.MyProjectService"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.yusukekuro.yamlbase64decoder.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
     <actions>
         <action id="com.github.yusukekuro.yamlbase64decoder.YamlBase64Decoder"
                 class="com.github.yusukekuro.yamlbase64decoder.YamlBase64Decoder"
