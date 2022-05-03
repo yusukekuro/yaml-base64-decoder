@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# yaml-base64-decoder Changelog
+# Yaml Base64 Decoder Changelog
 
 ## [Unreleased]
 ### Added

@@ -31,7 +31,7 @@ Usecase
 
 - Using IDE built-in plugin system:
   
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "yaml-base64-decoder"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Yaml Base64 Decoder"</kbd> >
   <kbd>Install Plugin</kbd>
   
 - Manually:
