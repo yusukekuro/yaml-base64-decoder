@@ -3,6 +3,8 @@
     <id>com.github.yusukekuro.yamlbase64decoder</id>
     <name>Yaml Base64 Decoder</name>
     <vendor>yusukekuro</vendor>
+    <!-- https://intellij-support.jetbrains.com/hc/en-us/community/posts/360010590059/comments/4407033276562 -->
+    <idea-version since-build="211"/>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>org.jetbrains.plugins.yaml</depends>
