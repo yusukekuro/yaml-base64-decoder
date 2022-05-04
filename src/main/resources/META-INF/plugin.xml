@@ -15,7 +15,7 @@
                 text="Decode Base64 Values"
                 description="Decode base64 encoded values in a yaml file."
                 icon="AllIcons.FileTypes.Yaml">
-            <keyboard-shortcut keymap="$default" first-keystroke="control alt Y"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control shift alt Y"/>
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>
