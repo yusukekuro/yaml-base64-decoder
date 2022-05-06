@@ -3,6 +3,8 @@
 # Yaml Base64 Decoder Changelog
 
 ## [Unreleased]
+### Fixed
+- Fix keymap in README
 
 ## [0.0.2]
 ### Added

@@ -7,8 +7,8 @@
 ## Plugin Description
 <!-- Plugin description -->
 #### Extension
-- Adds `Decode Base64 Values` to editor popup menu when yaml file is opened
-- Adds a keyboard shortcut `Cmd-Alt-Y` to run the decoder
+- Adds <kbd>Decode Base64 Values</kbd> to editor popup menu when yaml file is opened
+- Adds a keyboard shortcut <kbd>⌥ ⇧ ⌘ Y</kbd> to run the decoder
 
 #### Feature
 - Automatically detects Base64 encoded values in a yaml file and replace them with decoded values
