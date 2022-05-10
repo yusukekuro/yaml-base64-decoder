@@ -20,9 +20,9 @@ class YamlBase64DecodeRecursiveVisitor : YamlRecursivePsiElementVisitor() {
     override fun visitValue(value: YAMLValue) {
         if (!value.text.isNullOrBlank() && isDecodeTarget(value)) {
             try {
-                val decodedTextByteArray = decodeBase64(value)
+                val decodedTextByteArray = decodeBase64(value as YAMLScalar)
                 if (isUtf8(decodedTextByteArray)) {
-                    replaceText(value as YAMLScalar, String(decodedTextByteArray, StandardCharsets.UTF_8))
+                    replaceText(value, String(decodedTextByteArray, StandardCharsets.UTF_8))
                 }
             } catch (ignore: IllegalArgumentException) {
                 // Base64.getDecoder throws IllegalArgumentException if text is not valid Base64
@@ -36,9 +36,9 @@ class YamlBase64DecodeRecursiveVisitor : YamlRecursivePsiElementVisitor() {
         return value is YAMLPlainTextImpl || value is YAMLQuotedText
     }
 
-    private fun decodeBase64(value: YAMLValue): ByteArray {
+    private fun decodeBase64(value: YAMLScalar): ByteArray {
         // textValue removes beginning and ending quotes for YAMLQuotedText
-        return Base64.getDecoder().decode((value as YAMLScalar).textValue)
+        return Base64.getDecoder().decode(value.textValue)
     }
 
     private fun isUtf8(byteArray: ByteArray): Boolean {
