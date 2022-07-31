@@ -5,6 +5,11 @@
 ## [Unreleased]
 ### Fixed
 - Fix keymap in README
+- Minor refactoring
+### Changed
+- Upgrade java version from 11 to 17
+- Upgrade library versions
+- Support IntelliJ Platform version 222
 
 ## [0.0.2]
 ### Added
