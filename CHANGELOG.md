@@ -3,9 +3,12 @@
 # Yaml Base64 Decoder Changelog
 
 ## [Unreleased]
+
+## [1.0.0]
 ### Fixed
 - Fix keymap in README
 - Minor refactoring
+
 ### Changed
 - Upgrade java version from 11 to 17
 - Upgrade library versions
@@ -16,4 +19,3 @@
 - Add keymap `⌥ ⇧ ⌘ Y`
 - Initial version of Yaml Base64 Decoder
 - Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
-
