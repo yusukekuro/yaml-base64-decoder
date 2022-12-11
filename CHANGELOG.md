@@ -3,6 +3,9 @@
 # Yaml Base64 Decoder Changelog
 
 ## [Unreleased]
+### Changed
+- Copy changes from intellij-platform-plugin-template
+- Support future IntelliJ Platform versions
 
 ## [1.0.0]
 ### Fixed
