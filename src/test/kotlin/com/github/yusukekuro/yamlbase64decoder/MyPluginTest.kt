@@ -23,11 +23,11 @@ class MyPluginTest : BasePlatformTestCase() {
         }
     }
 
-    override fun getTestDataPath() = "src/test/testData/rename"
-
     fun testRename() {
         myFixture.testRename("foo.xml", "foo_after.xml", "a2")
     }
+
+    override fun getTestDataPath() = "src/test/testData/rename"
 
 //    TODO PsiTestUtil.checkFileStructure()
 //    https://plugins.jetbrains.com/docs/intellij/modifying-psi.html#maintaining-tree-structure-consistency
